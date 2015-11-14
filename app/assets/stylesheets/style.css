@@ -18,8 +18,10 @@ body {
     font-size:14px;
 }
 
+
+/* 네비게이션 글씨 색깔 */
 .nav a {
-    color:#ffffff !important;
+    color:#505050  !important;
 }
 .navbar-header a {
     color:#ffffff !important;
@@ -44,7 +46,7 @@ h1 {
    
     font-weight:700;
     font-size:50px;
-    color:#1fa51f; /* green color code */
+    color:#990066; 
 }
 
 p {
