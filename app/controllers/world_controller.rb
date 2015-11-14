@@ -13,13 +13,12 @@ class WorldController < ApplicationController
         post.title = params[:title]
         post.content = params[:content]
         post.save
-        redirect_to '/'        
-    
+        
+        redirect_to :back 
     end
     
     def past
-
-        
+        @post = Post.all.reverse   
     end
     
     def now
@@ -27,12 +26,12 @@ class WorldController < ApplicationController
     end
     
     def future
-        @post = Post.all.reverse   
+        
     end
     def delete
         delete_post = Post.find(params[:id])
         delete_post.destroy
-        redirect_to '/'  
+        redirect_to :back 
     end
     
     def modify
